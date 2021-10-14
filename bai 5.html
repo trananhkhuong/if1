@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>xét loại học lực.</h1>
+<form action="">
+    <p>Điền điểm</p>
+    <input type="number" id="soccer">
+    <button onclick="tinh()">Xét loại</button>
+</form>
+<script>
+    function tinh() {
+        let diem = +document.getElementById('soccer').value;
+        if (diem >= 8) {
+            alert('Chúc mừng bạn được học lực giỏi');
+        } else if (diem >= 6.5) {
+            alert('Bạn chỉ được học lực khá');
+        } else if (diem >= 4) {
+            alert('Học lực được trung bình');
+        } else {
+            alert('Bạn học dốt vcl');
+        }
+    }
+</script>
+</body>
+</html>

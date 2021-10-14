@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Tinh tien hoa hong</h1>
+  <input type="number" id="money">
+<button onclick="tien()" >Tinh tien</button>
+  <script>
+      function tien() { let a = document.getElementById('money').value;
+          if (a > 7000000){
+              alert('ban duoc huong 3%');
+          }else if (a > 5000000) {
+              alert('ban duoc huong 2%');
+          }else
+              alert('xin loi thang nay khong co tien');
+      }
+
+  </script>
+</body>
+</html>
